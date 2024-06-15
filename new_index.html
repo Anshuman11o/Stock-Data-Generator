@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Data</title>
+    <link rel="stylesheet" href="new_style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.0.1/build/global/luxon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.1.0"></script>
+    <script src="new_main.js" defer></script>
+</head>
+<body>
+    <h1>Stock Data Generator</h1>
+    <div class="input-container">
+      <input type="text" id="stockSymbol" placeholder="Enter stock symbol">
+      <button id="fetchButton">Fetch Stock Data</button>
+      <button id="resetButton">Reset</button>
+  </div>
+  <canvas id="myChart" width="400" height="200"></canvas>
+  <div id="metrics"></div>
+  <div id="highlights"></div>
+  <div id="output"></div>
+</body>
+</html>
